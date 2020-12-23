@@ -1,0 +1,28 @@
+@use 'colors' as *
+@use 'typography' as *
+
+:root
+    @include colors
+    @include typography
+
+html
+    box-sizing: border-box
+    font-size: var(--font__size) !important
+
+*, *::before, *::after
+    box-sizing: inherit
+
+body
+    background-color: var(--color__background)
+    font: var(--font__regular) 2rem / var(--font__line-height) var(--font__primary)
+    color: var(--color__font-primary)
+    margin: 0
+    padding: 0
+    scroll-behavior: smooth
+
+
+h1, h2, h3, h4, h5, h6
+    font-weight: var(--font__book)
+    font-size: inherit
+    margin: 0
+    line-height: 1
